@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fancy Weather</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=a54abab1-a504-4177-be20-029c774a29be&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9EWteMMQ6nnMzLQKykjWAkSgScujRWUk"></script>
+  
+  
+</head>
+<body>
+     <div class="main_wrapper">
+      <div class="controll_block">
+        <div class="control_block1">
+            <div class="refresh"><img src="src/img/Vector.png"></div>
+            <div class="language_change"></div>
+            <div class="temperature">
+              <div class="faringate">F</div>
+              <div class="celsium">C</div>
+            </div>
+        </div>
+        <div class="controll_block2">
+          <div class="search"><input type="text" class="search" id="textinput"></div>
+          <div class="search_button"><input type="button" value="SEARCH" id="search"></div>
+        </div>
+      </div>
+    <div class="main">
+      <div class="weather_block">
+        <div class="weather_block_country"></div>
+        <div class="dateblock"></div>
+        <div class="current_weather_block">
+          <div class="weather_block_current_weather"></div>
+          <div class="iconovercastflex">
+            <div class="iconka"><canvas class="icon" id="tst" width="128px" height="128px"></canvas></div>
+            <div class="overcast">
+              <ul>
+                <li class="icon_name"></li>
+                <li class="feelslike"></li>
+                <li class="wind">WIND : </li>
+                <li class="humidity"></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="weather_block_three_days">
+          <div class="day">
+            <p class="dayofweek1"></p>
+            <div class="miniflex">
+              <div class="temperature1"></div>
+              <div class="miniiconka"><canvas id="icon1" width="67" height="44"></canvas></div>
+            </div>
+          </div>
+          <div class="day">
+            <p class="dayofweek2"></p>
+            <div class="miniflex">
+              <div class="temperature2"></div>
+              <div class="miniiconka"><canvas id="icon2" width="67" height="44"></canvas></div>
+            </div>
+          </div>
+          <div class="day">
+            <p class="dayofweek3"></p>
+            <div class="miniflex">
+              <div class="temperature3"></div>
+              <div class="miniiconka"><canvas id="icon3" width="67" height="44"></canvas></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="map_block">
+        <div id="map"></div>
+        <div class="latitude">
+          <p class="latlat"></p>
+          <p class="latlon"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="src/js/skycons.js"></script>
+</body>
+</html>
